@@ -1,0 +1,474 @@
+
+:root {
+    --azul-fundo: #1045EF;
+    --amarelo-fundo: #FFC700;
+}
+
+@media (min-width:920px){
+    header {
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        margin-top: 9px;
+        width: 150px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 25px;
+    }
+
+
+
+    .escola {
+        width: 100%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+    }
+    .escola-texto {
+        font-size: 20px;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+       
+    }
+    .escola-titulo {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-1 {
+        width: 88%;
+    }
+    .escola-paragrafo-2 {
+        width: 70%;
+        margin-top: 8px;
+    }
+    .escola-mesma-linha {
+        display: flex;
+        width: 88%;
+        justify-content: center;
+    }
+    .colegio-img {
+        width: 30%;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 20px 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .caixa-estudante {
+        width: 65%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    .caixa-imagem {
+        width: 85%;
+        height: 200px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
+
+
+
+@media (max-width:460px) and (orientation: portrait){
+    header {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0.25em 0;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        width: 65px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
+
+    .escola {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 6% 88% 6%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+        padding-bottom: 3vh;
+    }
+    .escola-texto {
+        font-size: 1em;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .escola-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-2 {
+        margin-top: 0.1em;
+    }
+    .colegio-img {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0 1em 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+   
+    .caixa-estudante {
+        width: 90%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 0.8em;
+    }
+    .caixa-imagem {
+        width: 90%;
+        height: 187px;
+        margin-top: 0.3em;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 65px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
+
+@media (max-width:915px) and (orientation: landscape){
+    header {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0.25em 0;
+        background: var(--azul-fundo);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+    }
+    .alurastart-header {
+        width: 130px;
+    }
+    .header-lista-item {
+        display: inline-block;
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
+
+    .escola {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 6% 88% 6%;
+        background: linear-gradient(360deg, var(--amarelo-fundo) 0%, var(--azul-fundo) 101.56%, var(--azul-fundo) 101.57%);
+        padding-bottom: 3vh;
+    }
+    .escola-texto {
+        font-size: 1em;
+        padding: 100px 0 80px 6%; /*    PADDING: TOP RIGHT BOTTOM LEFT;    */
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .escola-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 10%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .escola-paragrafo-2 {
+        margin-top: 0.1em;
+    }
+    .colegio-img {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
+
+    .estudantes {
+        background: var(--amarelo-fundo);
+    }
+    .estudantes-titulo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0 1em 12.5%;
+    }
+    /* ao inves de usar 2 caixas, poderia usar:
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+    e usar <span> no html para quebra de coluna
+    */
+    .estudantes-dados {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+    }
+   
+    .caixa-estudante {
+        width: 90%;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 0.8em;
+    }
+    .caixa-imagem {
+        width: 90%;
+        height: 187px;
+        margin-top: 0.3em;
+        border-radius: 10px;
+    }
+    .caixa-contatos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caixa-contatos img {
+        width: 32px;
+        height: 32px;
+    }
+    .caixa-estudante h1 {
+        font-weight: bold;
+    }
+
+    footer {
+        width: 100%;
+        background: #000000;
+    }
+    .alurastart-footer {
+        width: 65px;
+        margin: 0 auto;
+        display: block;
+        padding: 9px 0;
+    }
+}
+
+Adicionar comentário para a turma...
+
+
+Aviso: "index.html <!DOCTYPE html> <html…"
+THATIELY DE OLIVEIRA MORAES
+Criado em: 1 de ago.1 de ago.
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Escola</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap&quot; rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="icons\alurastart-logo.png" alt="logo do Alura Start" class="alurastart-header">
+        <ul>
+            <li class="header-lista-item">
+                Escola
+            </li>
+            <li class="header-lista-item">
+                Estudante
+            </li>
+        </ul>
+    </header>
+    <section class="escola">
+        <div></div>
+        <div class="escola-texto">
+            <h1 class="escola-titulo">Sobre a escola</h1>
+            <p class="escola-paragrafo-1">
+                &nbsp; &nbsp; Localizado na rua Antonio Rosa, centro de Ribeirão do Pinhal, no Paraná, o Colégio Estadual Hermínia Lupion pertence à rede pública estadual de ensino e faz parte do núcleo regional de educação de Jacarézinho.
+            </p>
+            <div class="escola-mesma-linha">
+                <p class="escola-paragrafo-2">
+                    &nbsp; &nbsp; Em sua modalidade regular de ensino, oferta os cursos Ensino Fundamental Anos Finais, Ensino Médio e o curso Formação de Docentes, além de oferecer atividades complementares como o Programa Mais Aprendizado, Robótica Paraná, espanhol e modalidades de esportes.
+                </p>
+                <img src="fotos\site colégio.jpg" alt="Foto do colégio" class="colegio-img">
+            </div>
+        </div>
+    </section>
+    <section class="estudantes">
+        <h1 class="estudantes-titulo">Quem são nossos estudantes?</h1>
+       
+        <div class="estudantes-dados">
+            <span class="caixa-estudante">
+                <img src="fotos\estudante jpg" alt="foto do aluno Marcos" class="caixa-imagem">
+                <h1>nome aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://discord.com/users/654867458733113389&quot; target="_blank">
+                        <img src="icons\discord.png" alt="ícone do Discord">
+                    </a>
+                    <a href="https://github.com/nome do estudante" target="_blank">
+                        <img src="icons\github.png" alt="ícone do GitHub">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\estudante foto.jpg" alt="foto do aluno nome" class="caixa-imagem">
+                <h1>nome aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://discord.com/users/1065982235154595840&quot; target="_blank">
+                        <img src="icons\discord.png" alt="ícone do Discord">
+                    </a>
+                    <a href="https://github.com/nome do estudante" target="_blank">
+                        <img src="icons\github.png" alt="ícone do GitHub">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\estudante-site-foto.jpg" alt="foto do aluno nome" class="caixa-imagem">
+                <h1>nome do aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://github.com/nome do estudante " target="_blank">
+                        <img src="icons\discord.png" alt="ícone do Discord">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\site colégio" alt="foto do aluno nome" class="caixa-imagem">
+                <h1>nome do aluno </h1>
+                <span class="caixa-contatos">
+                    <a href="https://www.inststagram.com/nome&quot; target="_blank">
+                        <img src="icons\instagram.png" alt="ícone do Instagram">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\yasmin-site-foto.jpg" alt="foto do aluno nome"class="caixa-imagem">
+                <h1>nome do aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://www.instagram.com/nome/&quot; target="_blank">
+                        <img src="icons\instagram.png" alt="ícone do Instagram">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\foto.jpg" alt="foto da aluna  nome" class="caixa-imagem">
+                <h1>nome do aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://www.instagram.com/nome&quot; target="_blank">
+                        <img src="icons\instagram.png" alt="ícone do Instagram">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\foto aluno-site-foto.jpg" alt="foto da aluna nome" class="caixa-imagem">
+                <h1>nome doaluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://www.instagram.com/nome/&quot; target="_blank">
+                        <img src="icons\instagram.png" alt="ícone do Instagram">
+                    </a>
+                </span>
+            </span>
+            <span class="caixa-estudante">
+                <img src="fotos\foto aluno-site-foto.jpg" alt="foto da aluna nome" class="caixa-imagem">
+                <h1>nome do aluno</h1>
+                <span class="caixa-contatos">
+                    <a href="https://instagram.com/nome=&quot; target="_blank">
+                        <img src="icons\instagram.png" alt="ícone do Instagram">
+                    </a>
+                </span>
+            </span>
+        </div>
+    </section>
+    <footer>
+        <img src="icons\alurastart-logo.png" alt="logo do Alura Start" class="alurastart-footer">
+    </footer>
+</body>
+</html>
